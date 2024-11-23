@@ -1,0 +1,280 @@
+/* Report Table Styles */
+.table-container {
+  padding: 10px;
+  margin-top: 0px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Group header style */
+.group-header {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.group-expanded {
+  background-color: #e0e0e0;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.pagination-controls button:hover {
+  background-color: #ddd;
+}
+
+.pagination-controls select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.pagination-controls span {
+  font-size: 14px;
+}
+
+/* General layout improvements */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Grouping, Sorting, and Rows per page in one line */
+.dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Make the dropdowns responsive */
+  margin-bottom: 20px;
+}
+
+.dropdown-container {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.group-by-dropdown,
+.rows-per-page-dropdown {
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.group-header {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.group-expanded {
+  background-color: #d0ffd0;
+}
+
+/* File List Container */
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.file-item {
+  display: flex; /* Flexbox to align items in a row */
+  justify-content: space-between; /* Aligns file name to the left, buttons to the right */
+  align-items: center; /* Vertically centers the items */
+  padding: 9px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  color: #34495e;
+  font-size: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.file-item:hover {
+  color: #0056b3;
+  /* text-decoration: underline; */
+}
+
+/* File buttons */
+.file-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the far right */
+  gap: 10px;
+  align-items: center;
+}
+
+.toggle-button, .delete-button {
+  padding: px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button {
+  background-color: #d4edda; /* Green background for toggle */
+  border-color: #c3e6cb;
+}
+
+.toggle-button:hover {
+  background-color: #28a745;
+}
+
+.delete-button {
+  background-color: #f8d7da; /* Red background for delete */
+  border-color: #f5c6cb;
+}
+
+.delete-button:hover {
+  background-color: #dc3545;
+}
+
+.active-reports-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #2ecc71; /* Green underline to indicate active status */
+  padding-bottom: 5px;
+}
+
+.inactive-reports-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e74c3c; /* Red underline to indicate inactive status */
+  padding-bottom: 5px;
+}
+
+.folder-creation-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.folder-creation-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.folder-creation-box h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.folder-input {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.folder-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.create-folder-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.create-folder-btn:hover {
+  background-color: #0056b3;
+}
+
+.create-folder-btn:disabled {
+  background-color: #d6d8db;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .folder-creation-box {
+    max-width: 90%;
+  }
+}
